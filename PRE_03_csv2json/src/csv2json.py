@@ -1,13 +1,16 @@
 import csv
 import json
+import os
 
 from nicegui import ui
 
-
+#funciones
 def convert_csv_2_json(input_file):
 
     output_file = input_file.replace(".csv", ".json")
     output_file = output_file.replace("/data/", "/temp/")
+
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
 
     data = []
 
@@ -42,3 +45,5 @@ def app():
 
 if __name__ in {"__main__", "__mp_main__"}:
     app()
+    
+    
