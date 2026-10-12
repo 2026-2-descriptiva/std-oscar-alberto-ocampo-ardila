@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from s08_countries_cooc_matrix import make_cooc_matrix
+from .s08_countries_cooc_matrix import make_cooc_matrix
 
 SUBMISSION_DIRECTORY = Path(__file__).resolve().parent.parent / "submission"
 DATA_FILE = SUBMISSION_DIRECTORY / "scopus.csv.gz"

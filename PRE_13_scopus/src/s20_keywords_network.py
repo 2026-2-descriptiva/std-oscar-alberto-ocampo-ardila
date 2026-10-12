@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from s11_countries_network import make_cooc_network_plot
+from .s11_countries_network import make_cooc_network_plot
 
 SUBMISSION_DIRECTORY = Path(__file__).resolve().parent.parent / "submission"
 DATA_FILE = SUBMISSION_DIRECTORY / "scopus.csv.gz"

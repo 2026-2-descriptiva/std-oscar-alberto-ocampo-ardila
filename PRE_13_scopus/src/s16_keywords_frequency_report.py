@@ -8,7 +8,7 @@ SUBMISSION_DIRECTORY = Path(__file__).resolve().parent.parent / "submission"
 SUBMISSION_FILE = SUBMISSION_DIRECTORY / "scopus.csv.gz"
 FREQUENCY_REPORT_FILE = SUBMISSION_DIRECTORY / "keywords_frequency.csv"
 
-from s05_countries_frequency_report import make_frequency_report
+from .s05_countries_frequency_report import make_frequency_report
 
 
 def s16_keywords_frequency_report():
